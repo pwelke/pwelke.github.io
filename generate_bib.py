@@ -1,3 +1,5 @@
+import sys
+
 import bibtexparser
 from bibtexparser.customization import *
 from bibtexparser.bparser import BibTexParser
@@ -9,6 +11,7 @@ def filter_pubtype(list, pubtype):
     return sorted(filtered_list, key=lambda b: (b['year'], b['author']), reverse=True)
 
 def format_bibitem(item):
+    '''the main workhorse'''
     if 'doi' in item:
         link = f'https://dx.doi.org/{item["doi"]}'
     elif 'url' in item:
@@ -45,15 +48,13 @@ def format_bibitem(item):
 
 
 def get_pubtype_html(list, pubtype):
+    '''Create a html list of all (sorted) items of type pubtype'''
     s = '<ol>\n'
     for b in filter_pubtype(list, pubtype):
         s += format_bibitem(b)
     s += '</ol>\n'
     return s
 
-
-
-bibfile = 'smallref.bib'
 
 def authorfirstlast(record):
     record = author(record)
@@ -66,37 +67,34 @@ def authorfirstlast(record):
     record['author'] = ', '.join(authors)
     return record
 
-# Let's define a function to customize our entries.
-# It takes a record and return this record.
-def customizations(record):
-    """Use some functions delivered by the library
 
-    :param record: a record
-    :returns: -- customized record
-    """
+def customizations(record):
+    '''A function to customize our entries.
+    It takes a record and return this record.'''
+
     record = convert_to_unicode(record)
     record = authorfirstlast(record)
-    # record = editor(record)
-    # record = journal(record)
-    # record = keyword(record)
-    # record = link(record)
-    # record = page_double_hyphen(record)
-    # record = doi(record)
-    
-    # record = add_plaintext_fields(record)
     return record
 
-with open(bibfile) as bibtex_file:
-    parser = BibTexParser()
-    parser.customization = customizations
-    bibdict = bibtexparser.load(bibtex_file, parser=parser)
-    print(bibdict.entries)
+if __name__ == '__main__':
 
-    for pubtype in ['preprint', 'publication', 'lecturenote']:
+    if len(sys.argv) == 2:
+        bibfile = sys.argv[1]
+    else:
+        sys.stderr.write(f'Usage: python {sys.argv[0]} BIBFILE\n')
+        sys.exit(1)
 
-        pubs = get_pubtype_html(bibdict.entries, pubtype)
-        with open(f'{pubtype}.html', 'w') as o:
-            o.write(pubs)
-        print(pubtype)
-        print(pubs)
+    with open(bibfile) as bibtex_file:
+        parser = BibTexParser()
+        parser.customization = customizations
+        bibdict = bibtexparser.load(bibtex_file, parser=parser)
+        print(bibdict.entries)
+
+        for pubtype in ['preprint', 'publication', 'lecturenote']:
+
+            pubs = get_pubtype_html(bibdict.entries, pubtype)
+            with open(f'{pubtype}.html', 'w') as o:
+                o.write(pubs)
+            print(pubtype)
+            print(pubs)
 
