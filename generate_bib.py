@@ -30,6 +30,7 @@ def format_bibitem(item):
         s += f'{item["booktitle"]}, {item["publisher"]}<br />'
 
     # footer row with optionals
+    s += '<p class="discreet">\n'
     if 'url' in item:
         s += f'[<a href="{item["url"]}">pdf</a>]\n'
     if 'poster' in item:
@@ -42,7 +43,7 @@ def format_bibitem(item):
         s += f'[<a href="https://dx.doi.org/{item["doi"]}">doi</a>]\n'
     if 'biburl' in item:
         s += f'[<a href="{item["biburl"]}">bibtex</a>]\n'
-    
+    s += '</p>'
     s += '</li>\n'
     return s
 
@@ -76,14 +77,7 @@ def customizations(record):
     record = authorfirstlast(record)
     return record
 
-if __name__ == '__main__':
-
-    if len(sys.argv) == 2:
-        bibfile = sys.argv[1]
-    else:
-        sys.stderr.write(f'Usage: python {sys.argv[0]} BIBFILE\n')
-        sys.exit(1)
-
+def convert(bibfile):
     with open(bibfile) as bibtex_file:
         parser = BibTexParser()
         parser.customization = customizations
@@ -93,8 +87,19 @@ if __name__ == '__main__':
         for pubtype in ['preprint', 'publication', 'lecturenote']:
 
             pubs = get_pubtype_html(bibdict.entries, pubtype)
-            with open(f'{pubtype}.html', 'w') as o:
+            with open(f'{pubtype}.html_part', 'w') as o:
                 o.write(pubs)
             print(pubtype)
             print(pubs)
 
+
+
+if __name__ == '__main__':
+
+    if len(sys.argv) == 2:
+        bibfile = sys.argv[1]
+    else:
+        sys.stderr.write(f'Usage: python {sys.argv[0]} BIBFILE\n')
+        sys.exit(1)
+
+    convert(bibfile)
