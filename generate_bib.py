@@ -32,6 +32,17 @@ def get_pubtype_html(list, pubtype):
 
 bibfile = 'smallref.bib'
 
+def authorfirstlast(record):
+    record = author(record)
+
+    authors = list()
+    for a in record['author']:
+        l, f = a.split(', ')
+        s = f + ' ' + l
+        authors.append(s)
+    record['author'] = ', '.join(authors)
+    return record
+
 # Let's define a function to customize our entries.
 # It takes a record and return this record.
 def customizations(record):
@@ -40,14 +51,16 @@ def customizations(record):
     :param record: a record
     :returns: -- customized record
     """
-    record = type(record)
-    record = author(record)
-    record = editor(record)
-    record = journal(record)
-    record = keyword(record)
-    record = link(record)
-    record = page_double_hyphen(record)
-    record = doi(record)
+    record = convert_to_unicode(record)
+    record = authorfirstlast(record)
+    # record = editor(record)
+    # record = journal(record)
+    # record = keyword(record)
+    # record = link(record)
+    # record = page_double_hyphen(record)
+    # record = doi(record)
+    
+    # record = add_plaintext_fields(record)
     return record
 
 with open(bibfile) as bibtex_file:
