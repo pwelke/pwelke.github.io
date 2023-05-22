@@ -25,24 +25,33 @@ def format_bibitem(item):
 
     # venue formatting
     if item['ENTRYTYPE'] == 'article':
-        s += f'{item["journal"]}, {item["publisher"]}<br />'
+        s += f'{item["journal"]}, {item["publisher"]}<br />\n'
     if item['ENTRYTYPE'] == 'inproceedings':
-        s += f'{item["booktitle"]}, {item["publisher"]}<br />'
+        s += f'{item["booktitle"]}, {item["publisher"]}<br />\n'
+    if 'comment' in item:
+        s += f'({item["comment"]})<br />\n'
 
     # footer row with optionals
     s += '<p class="discreet">\n'
-    if 'url' in item:
-        s += f'[<a href="{item["url"]}">pdf</a>]\n'
+    if 'pdf' in item:
+        s += f'[<a href="{item["pdf"]}">pdf</a>]\n'
     if 'poster' in item:
         s += f'[<a href="{item["poster"]}">poster</a>]\n'
+    if 'slides' in item:
+        s += f'[<a href="{item["slides"]}">slides</a>]\n'
     if 'video' in item:
-        s += f'[<a href="{item["video"]}">poster</a>]\n'
-    if 'codeurl' in item:
-        s += f'[<a href="{item["codeurl"]}">code</a>]\n'
+        s += f'[<a href="{item["video"]}">video</a>]\n'
+    if 'code' in item:
+        s += f'[<a href="{item["code"]}">code</a>]\n'
     if 'doi' in item:
         s += f'[<a href="https://dx.doi.org/{item["doi"]}">doi</a>]\n'
+    if 'reviews' in item:
+        s += f'[<a href="{item["reviews"]}">reviews</a>]\n'
     if 'biburl' in item:
         s += f'[<a href="{item["biburl"]}">bibtex</a>]\n'
+    if 'venuetype' in item:
+        s += f'[<a href="{item["venueurl"]}">{item["venuetype"]}</a>]\n'
+    
     s += '</p>'
     s += '</li>\n'
     return s
