@@ -43,6 +43,8 @@ def format_bibitem(item):
         s += f'[<a href="{item["video"]}">video</a>]\n'
     if 'code' in item:
         s += f'[<a href="{item["code"]}">code</a>]\n'
+    if 'reproduciblerun' in item:
+        s += f'[<a href="{item["reproduciblerun"]}">reproducible run</a>]\n'
     if 'doi' in item:
         s += f'[<a href="https://dx.doi.org/{item["doi"]}">doi</a>]\n'
     if 'reviews' in item:
