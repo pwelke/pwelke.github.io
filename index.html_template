@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="neat.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
 
+    <link rel="icon" type="image/x-icon" href="circle.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
@@ -14,14 +16,13 @@
 
 <body>
 
-<a class="home" href="index.html">&nwarr;</a>
-
 <h1 id="about">Pascal Welke</h1>
 
 <img src="circle.png" width="150" height="150">
 
 
-<p>I am interested in Data Mining, Applied Graph Theory, Machine Learning, and Human-computer Interaction. I wrote my PhD thesis on 'Probabilistic Frequent Subtree Mining'.</p>
+<p>I am interested in learning on and with graphs. In particular, expressive graph representations, as well as efficient similarity based learning on graphs.
+I wrote my PhD thesis on 'Probabilistic Frequent Subtree Mining'.</p>
 
 <!-- <p>I also teach several courses that are offered by our group in the Bachelors program and Masters program in Computer Science and I supervise BA and MA theses.</p> -->
 
@@ -30,19 +31,25 @@
   <li><a href="#news">News</a></li>
   <li><a href="#preprints">Current Preprints</a></li>
   <li><a href="#publications">Publications</a></li>
+  <li><a href="#books">Books</a></li>
+  <li><a href="#nonarchival">Non-Archival Venues</a></li>
   <li><a href="#lecturenotes">Lecture Notes and Coding Nuggets</a></li>
   <li><a href="#activities">Community Activities</a></li>
 </ol>
 
 <h2 id="contact">Contact</h2>
 <p>
-I have an account on <a href="https://www.researchgate.net/profile/Pascal_Welke">ResearchGate</a>.  
+I have accounts on <a href="https://www.researchgate.net/profile/Pascal_Welke">ResearchGate</a> and <a href="https://www.linkedin.com/in/pascal-welke-0163b91b6/">LinkedIn</a>.
 My publications are indexed by <a href="https://dblp.uni-trier.de/pid/174/0119.html">dblp</a> and <a href="https://scholar.google.de/citations?user=hgwvC6gAAAAJ&amp;hl=en">google scholar</a>. 
 Some of the code that I write is on <a href="https://github.com/pwelke">github</a>.<br />
-<a href="https://limesurvey.informatik.uni-bonn.de/index.php/212688?lang=en">You can give me anonymous feedback (for example on my teaching performance).</a>
+<!-- <a href="https://limesurvey.informatik.uni-bonn.de/index.php/212688?lang=en">You can give me anonymous feedback (for example on my teaching performance).</a> -->
 </p>
 
 <b>Office:</b> 
+Erzherzog-Johann-Platz 1 (FB02), 1040 Vienna, Austria<br />
+
+<b>Email:</b> You can send mail to firstname.lastname@tuwien.ac.at<br />
+
 
 
 <h2 id="news">News</h2>
@@ -59,6 +66,12 @@ Some of the code that I write is on <a href="https://github.com/pwelke">github</
 
 <h2 id="publications">Publications</h2>
 <object type="text/html" data="publication.html_part"></object>
+
+<h2 id="Books">Books</h2>
+<object type="text/html" data="book.html_part"></object>
+
+<h2 id="nonarchival">Non-Archival Venues</h2>
+<object type="text/html" data="nonarchival.html_part"></object>
 
 <h2 id="lecturenotes">Lecture Notes and Coding Nuggets</h2>
 <object type="text/html" data="lecturenote.html_part"></object>
