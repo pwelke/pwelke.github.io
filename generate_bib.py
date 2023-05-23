@@ -47,6 +47,9 @@ def format_bibitem(item):
     if nonempty('comment', item):
         s += f'({item["comment"]})<br />\n'
 
+    if nonempty('abstract', item):
+        s += f'<p class="discreet">{item["abstract"]}</p>\n'
+
     # footer row with optionals
     s += '<p class="discreet">\n'
     if nonempty('pdf', item):

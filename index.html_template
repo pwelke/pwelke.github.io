@@ -33,7 +33,7 @@ I wrote my PhD thesis on 'Probabilistic Frequent Subtree Mining'.</p>
   <li><a href="#publications">Publications</a></li>
   <li><a href="#books">Books</a></li>
   <li><a href="#nonarchival">Non-Archival Venues</a></li>
-  <!-- <li><a href="#lecturenotes">Lecture Notes and Coding Nuggets</a></li> -->
+  <li><a href="#lecturenotes">Lecture Notes and Coding Nuggets</a></li>
   <li><a href="#activities">Community Activities</a></li>
 </ol>
 
@@ -73,9 +73,9 @@ Some of the code that I write is on <a href="https://github.com/pwelke">github</
 <h2 id="nonarchival">Non-Archival Venues</h2>
 <object type="text/html" data="nonarchival.html_part"></object>
 
-<!-- <h2 id="lecturenotes">Lecture Notes and Coding Nuggets</h2>
+<h2 id="lecturenotes">Lecture Notes and Coding Nuggets</h2>
 <object type="text/html" data="lecturenote.html_part"></object>
- -->
+
 <h2 id="activities">Community Activities</h2>
 <ol>
   <li>We have organized <a  href="https://mlg-europe.github.io/2022/">MLG@ECMLPKDD 2022</a>, the 18th Workshop on Mining and Learning with Graphs.</li>
