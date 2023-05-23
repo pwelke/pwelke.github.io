@@ -4,6 +4,9 @@ from generate_bib import convert
 # specify the categories
 pubtypes = ['preprint', 'publication', 'lecturenote', 'nonarchival', 'book']
 
+
+
+
 # convert bibfile to html lists
 convert('pascal.bib', pubtypes)
 
@@ -16,3 +19,7 @@ for pubtype in pubtypes:
 
 # write 
 Path('index.html').write_text(index)
+
+# clean up
+for pubtype in pubtypes:
+	Path(f'{pubtype}.html_part').unlink()
