@@ -8,7 +8,10 @@ from bibtexparser.bparser import BibTexParser
 def filter_pubtype(list, pubtype):
     '''filter by pubtype and sort in reverse chronological order'''
     filtered_list = [b for b in list if b['publicationtype'] == pubtype]
-    return sorted(filtered_list, key=lambda b: (b['year'], b['author']), reverse=True)
+    return sorted(filtered_list, key=lambda b: b['year'], reverse=True)
+
+def nonempty(string, item):
+    return (string in item) and (item[string] != '')
 
 def format_bibitem(item):
     '''the main workhorse'''
@@ -25,33 +28,45 @@ def format_bibitem(item):
 
     # venue formatting
     if item['ENTRYTYPE'] == 'article':
-        s += f'{item["journal"]}, {item["publisher"]}<br />\n'
+        if nonempty('journal', item):
+            s += f'{item["journal"]}'
+            if nonempty("volume", item):
+                s += f' ({item["volume"]})'
+            # if nonempty('publisher', item):
+            #     s += f', {item["publisher"]}'
+            s += '<br />\n'
     if item['ENTRYTYPE'] == 'inproceedings':
-        s += f'{item["booktitle"]}, {item["publisher"]}<br />\n'
-    if 'comment' in item:
+        if nonempty('booktitle', item):
+            s += f'{item["booktitle"]}'
+            # if nonempty('publisher', item):
+            #     s += f', {item["publisher"]}'
+            s += '<br />\n'
+
+
+    if nonempty('comment', item):
         s += f'({item["comment"]})<br />\n'
 
     # footer row with optionals
     s += '<p class="discreet">\n'
-    if 'pdf' in item:
+    if nonempty('pdf', item):
         s += f'[<a href="{item["pdf"]}">pdf</a>]\n'
-    if 'poster' in item:
+    if nonempty('poster', item):
         s += f'[<a href="{item["poster"]}">poster</a>]\n'
-    if 'slides' in item:
+    if nonempty('slides', item):
         s += f'[<a href="{item["slides"]}">slides</a>]\n'
-    if 'video' in item:
+    if nonempty('video', item):
         s += f'[<a href="{item["video"]}">video</a>]\n'
-    if 'code' in item:
+    if nonempty('code', item):
         s += f'[<a href="{item["code"]}">code</a>]\n'
-    if 'reproduciblerun' in item:
+    if nonempty('reproduciblerun', item):
         s += f'[<a href="{item["reproduciblerun"]}">reproducible run</a>]\n'
-    if 'doi' in item:
+    if nonempty('doi', item):
         s += f'[<a href="https://dx.doi.org/{item["doi"]}">doi</a>]\n'
-    if 'reviews' in item:
+    if nonempty('reviews', item):
         s += f'[<a href="{item["reviews"]}">reviews</a>]\n'
-    if 'biburl' in item:
+    if nonempty('biburl', item):
         s += f'[<a href="{item["biburl"]}">bibtex</a>]\n'
-    if 'venuetype' in item:
+    if nonempty('venuetype', item):
         s += f'[<a href="{item["venueurl"]}">{item["venuetype"]}</a>]\n'
     
     s += '</p>'
@@ -88,21 +103,16 @@ def customizations(record):
     record = authorfirstlast(record)
     return record
 
-def convert(bibfile):
+def convert(bibfile, pubtypes=['preprint', 'publication', 'lecturenote', 'nonarchival', 'book']):
     with open(bibfile) as bibtex_file:
         parser = BibTexParser()
         parser.customization = customizations
         bibdict = bibtexparser.load(bibtex_file, parser=parser)
-        print(bibdict.entries)
 
-        for pubtype in ['preprint', 'publication', 'lecturenote']:
-
+        for pubtype in pubtypes:
             pubs = get_pubtype_html(bibdict.entries, pubtype)
             with open(f'{pubtype}.html_part', 'w') as o:
                 o.write(pubs)
-            print(pubtype)
-            print(pubs)
-
 
 
 if __name__ == '__main__':
