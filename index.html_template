@@ -98,6 +98,8 @@ Erzherzog-Johann-Platz 1 (FB02), 1040 Vienna, Austria<br />
   Reviews for several journals, conferences, and academic funding programs, e.g. <a  href="https://link.springer.com/journal/10994">Machine Learning</a>, <a  href="https://www.springer.com/journal/10618">Data Mining and Knowledge Discovery</a>, <a  href="https://link.springer.com/journal/10472">AMAI</a>, <a  href="https://www.kdd.org/kdd2016/">ACM SIGKDD 2016</a>,  <a  href="https://www.ptj.de/projektfoerderung/kuenstliche-intelligenz-starter">KI-Starter NRW</a>.<br>
   </li>
 </ol>
+
+<p class="discreet">This page tries to be minimalistic in layout, bandwith, and used tools. It is hosted on <a href="https://github.com/pwelke/pwelke.github.io">github pages</a>, using <a href="https://neat.joeldare.com/">neat.css</a> stylesheets, and <a href="https://bibtexparser.readthedocs.org">bibtexparser</a> to generate the lists of references.</p>
     
 </body>
 
