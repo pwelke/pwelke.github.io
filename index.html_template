@@ -61,7 +61,7 @@ Erzherzog-Johann-Platz 1 (FB02), 1040 Vienna, Austria<br />
   <li>I am very happy to being <a  href="https://twitter.com/LogConference/status/1601245186306080770">awarded</a> as one of the 20 top<a  href="https://logconference.org/"> LOG'22</a> reviewers!</li>
 </ol>
 
-<h2 id="preprints">Preprints</h2>
+<h2 id="preprints">Current Preprints</h2>
 <object type="text/html" data="preprint.html_part"></object>
 
 <h2 id="publications">Publications</h2>
@@ -73,9 +73,9 @@ Erzherzog-Johann-Platz 1 (FB02), 1040 Vienna, Austria<br />
 <h2 id="nonarchival">Non-Archival Venues</h2>
 <object type="text/html" data="nonarchival.html_part"></object>
 
-<h2 id="lecturenotes">Lecture Notes and Coding Nuggets</h2>
+<!-- <h2 id="lecturenotes">Lecture Notes and Coding Nuggets</h2>
 <object type="text/html" data="lecturenote.html_part"></object>
-
+ -->
 <h2 id="activities">Community Activities</h2>
 <ol>
   <li>We have organized <a  href="https://mlg-europe.github.io/2022/">MLG@ECMLPKDD 2022</a>, the 18th Workshop on Mining and Learning with Graphs.</li>
