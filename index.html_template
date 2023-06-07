@@ -21,7 +21,7 @@
 <img src="circle.png" width="150" height="150">
 
 
-<p>I am interested in learning on and with graphs. In particular, expressive graph representations, as well as efficient similarity based learning on graphs.
+<p>I am interested in learning on and with graphs. In particular, expressive graph representations, as well as efficient similarity based learning on graphs and graph kernel design.
 I wrote my PhD thesis on 'Probabilistic Frequent Subtree Mining'.</p>
 
 <!-- <p>I also teach several courses that are offered by our group in the Bachelors program and Masters program in Computer Science and I supervise BA and MA theses.</p> -->
@@ -54,6 +54,7 @@ Some of the code that I write is on <a href="https://github.com/pwelke">github</
 
 <h2 id="news">News</h2>
 <ol>
+  <li>Our paper <i>Not All Models Are Explained Equal: How Explainable Machine Learning Suffers from the Rashomon Effect</i> got accepted at <b>ECMLPKDD</b>. See you in Torino, Italy!</li>
   <li>I have joined <b>TU Wien</b>'s <a href="https://ml-tuw.github.io">Machine Learning Research Unit</a> in May 2023.</li>
   <li>Two accepted papers at <b>ACL'23</b>! <i><a href="https://arxiv.org/abs/2207.03777">Hidden Schema Networks</a></i> and <i><a href="https://arxiv.org/abs/2209.01106">A New Aligned Simple German Corpus</a></i>. See you in Toronto, Canada!</li>
   <li>Our paper on <i>Expectation-Complete Graph Representations with Homomorphisms</i> has been accepted at <b>ICML'23</b>! See you in Honolulu, Hawaii!</li>
@@ -78,17 +79,28 @@ Some of the code that I write is on <a href="https://github.com/pwelke">github</
 
 <h2 id="activities">Community Activities</h2>
 <ol>
+  <li> I am a regular program committee member of conferences, e.g.,
+    LOG'<a  href="http://log2022.logconference.org/">22</a>, 
+    ICLR'<a  href="https://iclr.cc/2021">21</a>'<a  href="https://iclr.cc/Conferences/2022">22</a>, 
+    SISAP'<a  href="https://sisap.org/2021/">21</a>, 
+    ICML'<a  href="https://icml.cc/Conferences/2021">21</a>'<a  href="https://icml.cc/Conferences/2023">23</a>, 
+    AISTATS'<a  href="https://www.aistats.org/aistats2020">20</a>'<a  href="http://www.aistats.org/aistats2021/">21</a>'<a  href="https://aistats.org/aistats2022/">22</a>, 
+    SDM'<a  href="https://www.siam.org/conferences/cm/conference/sdm21">21</a>, 
+    ICDM'<a  href="http://icdm2020.bigke.org/">20</a>, 
+    ECMLPKDD'<a  href="https://ecmlpkdd2020.net/organisation/programcommittee/">20</a>'<a  href="2021.ecmlpkdd.org">21</a>'<a  href="2022.ecmlpkdd.org">22(Journal Track)</a>, 
+    and 
+    NeurIPS'<a  href="https://neurips.cc/Conferences/2020/">20</a>'<a  href="https://neurips.cc/Conferences/2021/">21</a>'<a  href="https://neurips.cc/Conferences/2022/">22</a>'<a  href="https://neurips.cc/Conferences/2023/">23</a>.  
+  </li>
   <li>We have organized <a  href="https://mlg-europe.github.io/2022/">MLG@ECMLPKDD 2022</a>, the 18th Workshop on Mining and Learning with Graphs.</li>
   <li>I was program chair of the KDML track at <a  href="http://lwda2022.de">LWDA 2022</a>.</li>
   <li>We have organized <a  href="https://gem-ecmlpkdd.github.io/">GEM'21</a>, the third Workshop on Graph Embedding and Mining, collocated with <a  href="http://2021.ecmlpkdd.org">ECMLPKDD'21</a>! It has been a pleasure!
     <a  href="https://link.springer.com/book/10.1007/978-3-030-93736-2?sap-outbound-id=E835120BC32195E87FABD9DD18C1D03E5743D37A">Here are the proceedings</a>.</li>
-  <li>I am a member of the program committee of <a  href="https://pdfl.iais.fraunhofer.de/">PDFL'21</a>, the Workshop on Parallel, Distributed, and Federated Learning, collocated with <a  href="http://2021.ecmlpkdd.org">ECMLPKDD'21</a>.
+  <li>I was a member of the program committee of <a  href="https://pdfl.iais.fraunhofer.de/">PDFL'21</a>, the Workshop on Parallel, Distributed, and Federated Learning, collocated with <a  href="http://2021.ecmlpkdd.org">ECMLPKDD'21</a>.
     <a  href="https://link.springer.com/book/10.1007/978-3-030-93736-2?sap-outbound-id=E835120BC32195E87FABD9DD18C1D03E5743D37A">Here are the proceedings</a>.</li>
   <li>I have co-organized <a  href="https://gem-ecmlpkdd.github.io/archive/2020">GEM'20</a>, the Workshop on Graph Embedding and Mining, collocated with <a  href="http://www.ecmlpkdd2020.net">ECMLPKDD'20.</a></li>
   <li>I was program chair (with Nico Piatkowski) of the KDML track at <a  href="https://www.lwda2020.org/">LWDA 2020</a>. It has been a pleasure. 
     <a  href="http://ceur-ws.org/Vol-2738/">Here are the proceedings.</a></li>
   <li> I was member of the program committee of <a  href="https://pdfl.iais.fraunhofer.de/">PDFL'20</a>, the Workshop on Parallel, Distributed, and Federated Learning, collocated with <a  href="http://www.ecmlpkdd2020.net">ECMLPKDD'20</a>.</li>
-  <li> I was program committee member of <a  href="https://logconference.org/">LOG'22</a>, <a  href="https://iclr.cc/">ICLR'21</a>'<a  href="https://iclr.cc/Conferences/2022">22</a>'23, <a  href="https://sisap.org/2021/">SISAP'21</a>, <a  href="https://icml.cc/Conferences/2021">ICML'21</a>, <a  href="https://www.aistats.org/aistats2020">AISTATS'20</a> <a  href="http://www.aistats.org/aistats2021/">'21</a> '<a  href="https://aistats.org/aistats2022/">22</a>, <a  href="https://www.siam.org/conferences/cm/conference/sdm21">SDM'21</a>, <a  href="http://icdm2020.bigke.org/">ICDM'20</a>, <a  href="https://ecmlpkdd2020.net/organisation/programcommittee/">ECMLPKDD'20</a><a  href="2021.ecmlpkdd.org">'21</a>, and <a  href="https://neurips.cc/Conferences/2020/">NeurIPS'20</a><a  href="https://neurips.cc/Conferences/2021/">'21</a>'22.  </li>
   <li>
   Member of the program committee of <a  href="https://gem-ecmlpkdd.github.io/">GEM'19</a>, the Workshop on Graph Embedding and Mining, collocated with <a  href="http://www.ecmlpkdd2019.org">ECMLPKDD'19</a>. </li>
   <li>
