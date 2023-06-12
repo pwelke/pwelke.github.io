@@ -68,6 +68,8 @@ def format_bibitem(item):
         s += f'[<a href="https://dx.doi.org/{item["doi"]}">doi</a>]\n'
     if nonempty('reviews', item):
         s += f'[<a href="{item["reviews"]}">reviews</a>]\n'
+    if nonempty('eprint', item):
+        s += f'[<a href="https://arxiv.org/abs/{item["eprint"]}">arXiv</a>]\n'        
     if nonempty('biburl', item):
         s += f'[<a href="{item["biburl"]}">bibtex</a>]\n'
     if nonempty('venuetype', item):
