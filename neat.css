@@ -46,9 +46,17 @@ body {
     margin-right: auto;
 }
 
+/* changes by pascal */
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 50%;
+}
+
+/* changes by pascal */
+p.discreet {
+    font-size: 0.8em;
+    margin-top: 0%;
 }
 
 button, .button, input[type=submit] {
