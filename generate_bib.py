@@ -23,9 +23,15 @@ def format_bibitem(item):
     else:
         link = ''
 
+    # abstract as mouseover if available
+    if nonempty('abstract', item):
+        abstract = f'title="{item["abstract"]}"'
+    else:
+        abstract = ''
+
     # authors and title
     s =  f'<li>{item["author"]} ({item["year"]}):<br />\n'
-    s += f'<a href="{link}">{item["title"]}</a>.<br />\n'
+    s += f'<a {abstract} href="{link}">{item["title"]}</a>.<br />\n'
 
     # venue formatting
     if item['ENTRYTYPE'] == 'article':
@@ -47,8 +53,8 @@ def format_bibitem(item):
     if nonempty('comment', item):
         s += f'({item["comment"]})<br />\n'
 
-    if nonempty('abstract', item):
-        s += f'<p class="discreet">{item["abstract"]}</p>\n'
+    # if nonempty('abstract', item):
+    #     s += f'<p class="discreet">{item["abstract"]}</p>\n'
 
     # footer row with optionals
     s += '<p class="discreet">\n'
