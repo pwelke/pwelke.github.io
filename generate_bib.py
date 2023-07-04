@@ -14,7 +14,14 @@ def filter_pubtype(list, pubtype):
 def nonempty(string, item):
     return (string in item) and (item[string] != '')
 
-def format_bibitem(item):
+
+def cf(s1, s2, format):
+    if format == 'html':
+        return s1
+    if format == 'tex':
+        return s2
+
+def format_bibitem(item, format):
     '''the main workhorse'''
     if 'doi' in item:
         link = f'https://dx.doi.org/{item["doi"]}'
@@ -25,13 +32,17 @@ def format_bibitem(item):
 
     # abstract as mouseover if available
     if nonempty('abstract', item):
-        abstract = f'title="{item["abstract"]}"'
+        abstract = cf(f'title="{item["abstract"]}"', '', format)
     else:
         abstract = ''
 
+    # start list item
+    s = cf('<li>', '\\item', format)
     # authors and title
-    s =  f'<li>{item["author"]} ({item["year"]}):<br />\n'
-    s += f'<a {abstract} href="{link}">{item["title"]}</a>.<br />\n'
+    s +=  f'{item["author"]} ({item["year"]}):'
+    s += cf('<br />\n', '\\newline\n', format)
+    s += cf(f'<a {abstract} href="{link}">{item["title"]}</a>.', f'\\href{{{link}}}{{{item["title"]}}}', format)
+    s += cf('<br />\n', '\\newline\n', format)
 
     # venue formatting
     if item['ENTRYTYPE'] == 'article':
@@ -39,59 +50,54 @@ def format_bibitem(item):
             s += f'{item["journal"]}'
             if nonempty("volume", item):
                 s += f' ({item["volume"]})'
-            # if nonempty('publisher', item):
-            #     s += f', {item["publisher"]}'
-            s += '<br />\n'
+            s += cf('<br />\n', '\\newline\n', format)
+
     if item['ENTRYTYPE'] == 'inproceedings':
         if nonempty('booktitle', item):
             s += f'{item["booktitle"]}'
-            # if nonempty('publisher', item):
-            #     s += f', {item["publisher"]}'
-            s += '<br />\n'
+            s += cf('<br />\n', '\\newline\n', format)
 
 
     if nonempty('comment', item):
-        s += f'({item["comment"]})<br />\n'
-
-    # if nonempty('abstract', item):
-    #     s += f'<p class="discreet">{item["abstract"]}</p>\n'
+        s += f'({item["comment"]})'
+        s += cf('<br />\n', '\\newline\n', format)
 
     # footer row with optionals
-    s += '<p class="discreet">\n'
+    s += cf('<p class="discreet">\n', f'{{\\small\n', format)
     if nonempty('pdf', item):
-        s += f'[<a href="{item["pdf"]}">pdf</a>]\n'
+        s += cf(f'[<a href="{item["pdf"]}">pdf</a>]\n', f'[\\href{{{item["pdf"]}}}{{pdf}}]\n', format)
     if nonempty('poster', item):
-        s += f'[<a href="{item["poster"]}">poster</a>]\n'
+        s += cf(f'[<a href="{item["poster"]}">poster</a>]\n', f'[\\href{{{item["poster"]}}}{{poster}}]\n', format)
     if nonempty('slides', item):
-        s += f'[<a href="{item["slides"]}">slides</a>]\n'
+        s += cf(f'[<a href="{item["slides"]}">slides</a>]\n', f'[\\href{{{item["slides"]}}}{{slides}}]\n', format)
     if nonempty('video', item):
-        s += f'[<a href="{item["video"]}">video</a>]\n'
+        s += cf(f'[<a href="{item["video"]}">video</a>]\n', f'[\\href{{{item["video"]}}}{{video}}]\n', format)
     if nonempty('code', item):
-        s += f'[<a href="{item["code"]}">code</a>]\n'
+        s += cf(f'[<a href="{item["code"]}">code</a>]\n', f'[\\href{{{item["code"]}}}{{code}}]\n', format)
     if nonempty('reproduciblerun', item):
-        s += f'[<a href="{item["reproduciblerun"]}">reproducible run</a>]\n'
+        s += cf(f'[<a href="{item["reproduciblerun"]}">reproducible run</a>]\n', f'[\\href{{{item["reproduciblerun"]}}}{{reproducible run}}]\n', format)
     if nonempty('doi', item):
-        s += f'[<a href="https://dx.doi.org/{item["doi"]}">doi</a>]\n'
+        s += cf(f'[<a href="https://dx.doi.org/{item["doi"]}">doi</a>]\n', f'[\\href{{https://dx.doi.org/{item["doi"]}}}{{doi}}]\n', format)
     if nonempty('reviews', item):
-        s += f'[<a href="{item["reviews"]}">reviews</a>]\n'
+        s += cf(f'[<a href="{item["reviews"]}">reviews</a>]\n', f'[\\href{{{item["reviews"]}}}{{reviews}}]\n', format)
     if nonempty('eprint', item):
-        s += f'[<a href="https://arxiv.org/abs/{item["eprint"]}">arXiv</a>]\n'        
+        s += cf(f'[<a href="https://arxiv.org/abs/{item["eprint"]}">arXiv</a>]\n', f'[\\href{{https://arxiv.org/abs/{item["eprint"]}}}{{arxiv}}]\n', format)
     if nonempty('biburl', item):
-        s += f'[<a href="{item["biburl"]}">bibtex</a>]\n'
+        s += cf(f'[<a href="{item["biburl"]}">bibtex</a>]\n', f'[\\href{{{item["biburl"]}}}{{bibtex}}]\n', format)
     if nonempty('venuetype', item):
-        s += f'[<a href="{item["venueurl"]}">{item["venuetype"]}</a>]\n'
+        s += cf(f'[<a href="{item["venueurl"]}">{item["venuetype"]}</a>]\n', f'[\\href{{{item["venueurl"]}}}{{{item["venuetype"]}}}]\n', format)
     
-    s += '</p>'
-    s += '</li>\n'
+    s += cf('</p>', f'}}', format)
+    s += cf('</li>\n', '', format)
     return s
 
 
-def get_pubtype_html(list, pubtype):
+def get_pubtype(list, pubtype, format):
     '''Create a html list of all (sorted) items of type pubtype'''
-    s = '<ol>\n'
+    s = cf('<ol>\n', '\\begin{enumerate}\n', format)
     for b in filter_pubtype(list, pubtype):
-        s += format_bibitem(b)
-    s += '</ol>\n'
+        s += format_bibitem(b, format)
+    s += cf('</ol>\n', '\\end{enumerate}', format)
     return s
 
 
@@ -115,15 +121,15 @@ def customizations(record):
     record = authorfirstlast(record)
     return record
 
-def convert(bibfile, pubtypes=['preprint', 'publication', 'lecturenote', 'nonarchival', 'book']):
+def convert(bibfile, pubtypes=['preprint', 'publication', 'lecturenote', 'nonarchival', 'book'], format='html'):
     with open(bibfile) as bibtex_file:
         parser = BibTexParser()
         parser.customization = customizations
         bibdict = bibtexparser.load(bibtex_file, parser=parser)
 
         for pubtype in pubtypes:
-            pubs = get_pubtype_html(bibdict.entries, pubtype)
-            with open(f'{pubtype}.html_part', 'w') as o:
+            pubs = get_pubtype(bibdict.entries, pubtype, format=format)
+            with open(f'{pubtype}.{format}_part', 'w') as o:
                 o.write(pubs)
 
 
