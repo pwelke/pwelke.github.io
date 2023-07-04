@@ -37,7 +37,7 @@ def format_bibitem(item, format):
         abstract = ''
 
     # start list item
-    s = cf('<li>', '\\item', format)
+    s = cf('<li>\n', '\\item\n', format)
     # authors and title
     s +=  f'{item["author"]} ({item["year"]}):'
     s += cf('<br />\n', '\\newline\n', format)
@@ -63,7 +63,7 @@ def format_bibitem(item, format):
         s += cf('<br />\n', '\\newline\n', format)
 
     # footer row with optionals
-    s += cf('<p class="discreet">\n', f'{{\\small\n', format)
+    s += cf('<p class="discreet">\n', f'{{\\footnotesize\n', format)
     if nonempty('pdf', item):
         s += cf(f'[<a href="{item["pdf"]}">pdf</a>]\n', f'[\\href{{{item["pdf"]}}}{{pdf}}]\n', format)
     if nonempty('poster', item):
@@ -87,7 +87,7 @@ def format_bibitem(item, format):
     if nonempty('venuetype', item):
         s += cf(f'[<a href="{item["venueurl"]}">{item["venuetype"]}</a>]\n', f'[\\href{{{item["venueurl"]}}}{{{item["venuetype"]}}}]\n', format)
     
-    s += cf('</p>', f'}}', format)
+    s += cf('</p>\n', f'}}\n', format)
     s += cf('</li>\n', '', format)
     return s
 
