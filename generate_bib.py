@@ -99,10 +99,10 @@ def format_bibitem(item, format):
 
 def get_pubtype(list, pubtype, format):
     '''Create a html list of all (sorted) items of type pubtype'''
-    s = cf('<ol>\n', '\\begin{enumerate}\n', format)
+    s = cf('<ol>\n', '\\begin{enumerate}\n\\conti\n', format)
     for b in filter_pubtype(list, pubtype):
         s += format_bibitem(b, format)
-    s += cf('</ol>\n', '\\end{enumerate}', format)
+    s += cf('</ol>\n', '\\seti\n\\end{enumerate}', format)
     return s
 
 

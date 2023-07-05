@@ -48,6 +48,12 @@
 
 \begin{document}
 
+\newcounter{saveenumi}
+\setcounter{saveenumi}{0}
+\newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
+\newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
+
+
 \section{Current Preprints}
 \input{preprint.tex_part}
 
