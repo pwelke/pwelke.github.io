@@ -2,6 +2,7 @@ from pathlib import Path
 from generate_bib import convert
 
 import re
+import subprocess
 
 
 def create_homepage(pubtypes):
@@ -40,9 +41,15 @@ def create_latex(pubtypes, baseurl):
 	# write 
 	Path('reflist.tex').write_text(index)
 
+	cmd = ['latexmk', '-xelatex', '-shell-escape', 'reflist.tex']
+	subprocess.run(cmd)
+
 	# clean up
 	for pubtype in pubtypes:
 		Path(f'{pubtype}.tex_part').unlink()
+
+	for extension in ['aux', 'fdb_latexmk', 'fls', 'log', 'out', 'xdv']:
+		Path(f'reflist.{extension}').unlink()
 
 
 
