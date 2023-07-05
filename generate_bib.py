@@ -30,6 +30,7 @@ def format_bibitem(item, format):
     else:
         link = ''
 
+
     # abstract as mouseover if available
     if nonempty('abstract', item):
         abstract = cf(f'title="{item["abstract"]}"', '', format)
@@ -38,6 +39,10 @@ def format_bibitem(item, format):
 
     # start list item
     s = cf('<li>\n', '\\item\n', format)
+
+    # add a label, if desired (for tex this is useful for referencing)
+    s += cf('', f'\\label{{{item["ID"]}}}\n', format)
+
     # authors and title
     s +=  f'{item["author"]} ({item["year"]}):'
     s += cf('<br />\n', '\\newline\n', format)
