@@ -3,7 +3,7 @@
 <head>
     <title>Pascal Welke</title>
     <link rel="stylesheet" type="text/css" href="neat.css">
-    <link rel="icon" type="image/x-icon" href="circle.jpg">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 </head>
@@ -12,7 +12,7 @@
 
 <h1 id="about">Pascal Welke</h1>
 
-<img src="favicon.png" width="150" height="150">
+<img src="circle.jpg" width="150" height="150">
 
 
 <p>I am interested in learning on and with graphs. In particular, expressive graph representations, as well as efficient similarity based learning on graphs and graph kernel design.
