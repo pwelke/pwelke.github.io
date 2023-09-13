@@ -1,0 +1,71 @@
+% \documentclass{scrartcl}
+
+% %% Typography -- works with xelatex and Fonts installed on your system
+% \usepackage[no-math]{fontspec}
+% \usepackage{microtype}
+% \usepackage{hyperref}
+% \usepackage[numbers]{natbib}
+
+% \defaultfontfeatures{Ligatures=TeX}
+% % Set sans serif font (for titles)
+% \setsansfont{Aleo Light}
+% % Set serifed font (for body)
+% \setmainfont[StylisticSet=11]{Vollkorn} % Use 'boring 1' stylistic set of Vollkorn to better distinguish between 1 and I
+% \setkomafont{disposition}{\sffamily}
+% \setkomafont{paragraph}{\bfseries}
+% \setkomafont{descriptionlabel}{\bfseries}
+% \setkomafont{title}{\sffamily\mdseries}
+% \setparsizes{0pt}{3pt}{0pt plus 1fil}
+
+% \usepackage{datetime}
+% \yyyymmdddate
+% \renewcommand{\dateseparator}{-}
+
+% \newcommand{\theauthor}[0]{Pascal Welke}
+% \renewcommand{\author}[1]{\renewcommand{\theauthor}{#1}}
+% \newcommand{\thetitle}{Some Title}
+% \renewcommand{\title}[1]{\renewcommand{\thetitle}{#1}}
+
+% % change this to change authors everywhere
+% \author{Dr. Pascal Welke}
+% \title{List of Publications}
+
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \fancyhead[C]{\today}
+% \fancyhead[R]{\theauthor}
+% \fancyhead[L]{\thetitle}
+
+% \hypersetup{colorlinks=true,
+% 	linkcolor=black,
+% 	filecolor=black,
+% 	urlcolor=blue,
+% 	citecolor=blue, %black, %darkblue,
+% 	pdfauthor={\theauthor},
+% 	pdfkeywords={},
+% 	bookmarksnumbered=true
+% }
+
+% \begin{document}
+
+\newcounter{saveenumi}
+\setcounter{saveenumi}{0}
+\newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
+\newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
+
+
+
+\section{Publications}
+\input{preprint.tex_part}
+\input{publication.tex_part}
+
+\section{Books}
+\input{book.tex_part}
+
+\section{Nonarchival Peer Reviewed Venues}
+\input{nonarchival.tex_part}
+
+\section{Under Review}
+\input{underreview.tex_part}
+
+% \end{document}

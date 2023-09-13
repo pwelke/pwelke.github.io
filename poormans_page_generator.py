@@ -24,12 +24,12 @@ def create_homepage(pubtypes):
 		Path(f'{pubtype}.html_part').unlink()
 
 
-def create_latex(pubtypes, baseurl):
+def create_latex(pubtypes, baseurl, template):
 	# convert bibfile to html lists
 	convert('pascal.bib', pubtypes, format='tex')
 
 	# load files
-	index = Path('reflist.tex_template').read_text()
+	index = Path(f'{template}.tex_template').read_text()
 
 	for pubtype in pubtypes:
 		reflist = Path(f'{pubtype}.tex_part').read_text()
@@ -39,9 +39,10 @@ def create_latex(pubtypes, baseurl):
 	index = re.sub('\\\\href\{(?!https://)', f'\\\\href{{{baseurl}', index)
 
 	# write 
-	Path('reflist.tex').write_text(index)
+	Path(f'{template}.tex').write_text(index)
 
-	cmd = ['latexmk', '-xelatex', '-shell-escape', 'reflist.tex']
+def compile_latex(template, pubtypes):
+	cmd = ['latexmk', '-xelatex', '-shell-escape', f'{template}.tex']
 	subprocess.run(cmd)
 
 	# clean up
@@ -58,4 +59,6 @@ if __name__ == '__main__':
 	pubtypes = ['preprint', 'publication', 'lecturenote', 'nonarchival', 'book']
 
 	create_homepage(pubtypes)
-	create_latex(pubtypes, baseurl='https://pwelke.github.io/')
+	create_latex(pubtypes, baseurl='https://pwelke.github.io/', template='reflist')
+	create_latex(pubtypes + ['underreview'], baseurl='https://pwelke.github.io/', template='reflistcv')
+	compile_latex('reflist', pubtypes + ['underreview'])
