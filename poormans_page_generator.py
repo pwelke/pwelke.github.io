@@ -25,7 +25,7 @@ def create_homepage(pubtypes):
 
 
 def create_latex(pubtypes, baseurl, template):
-	# convert bibfile to html lists
+	# convert bibfile to tex lists
 	convert('pascal.bib', pubtypes, format='tex')
 
 	# load files
