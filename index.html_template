@@ -50,7 +50,9 @@ Some of the code that I write is on <a href="https://github.com/pwelke">github</
 
 <h2 id="news">News</h2>
 <ol>
-  <li>Happy that we can present two papers at the <b>GLFrontiers@NeurIPS</b> workshop: <i>Graph Pooling Provably Improves Expressivity</i> and <i>Maximally Expressive GNNs for Outerplanar Graphs</i>.</li>
+  <li>I'll visit the <a href="https://www.mdsi.tum.de/mdsi/log2023/">LOG meetup in Munich</a>. See you there!
+  </li>
+  <li>Happy that we can present two papers at the <b>GLFrontiers@NeurIPS</b> workshop: <i>Graph Pooling Provably Improves Expressivity</i> and <i>Maximally Expressive GNNs for Outerplanar Graphs</i>. See you in New Orleans, USA!</li>
   <li>I joined the <a href="https://ellis.eu/">ELLIS society</a> as a member.</li>
   <li>We won the <a href="publications/expectation_complete_poster_ICML.pdf">best poster</a> award at G-Research's ICML poster party in London where my coauthor Max Thiessen presented <i>Expectation-Complete Graph Representations with Homomorphisms</i>.</li>
   <li>Our paper <i>Not All Models Are Explained Equal: How Explainable Machine Learning Suffers from the Rashomon Effect</i> got accepted at <b>ECMLPKDD</b>. See you in Torino, Italy!</li>
