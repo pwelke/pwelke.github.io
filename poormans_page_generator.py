@@ -36,7 +36,7 @@ def create_latex(pubtypes, baseurl, template):
 		index = index.replace(f'\\input{{{pubtype}.tex_part}}', reflist)
 
 	# add baseurl to relative urls for a standalone pdf version
-	index = re.sub('\\\\href\{(?!https://)', f'\\\\href{{{baseurl}', index)
+	index = re.sub('\\\\href\{(?!http)', f'\\\\href{{{baseurl}', index)
 
 	# write 
 	Path(f'{template}.tex').write_text(index)
