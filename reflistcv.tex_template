@@ -54,9 +54,10 @@
 \newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
 
 
+\section{Current Preprints}
+\input{preprint.tex_part}
 
 \section{Publications}
-\input{preprint.tex_part}
 \input{publication.tex_part}
 
 \section{Books}
