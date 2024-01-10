@@ -78,19 +78,20 @@ Some of the code that I write is on <a href="https://github.com/pwelke">github</
 <h2 id="activities">Community Activities</h2>
 <ol>
   <li>I am a regular program committee member of conferences, e.g.,
-    LOG'<a href="http://log2022.logconference.org/">22</a>'<a href="http://logconference.org/">23</a>, 
-    ICLR'<a href="https://iclr.cc/2021">21</a>'<a href="https://iclr.cc/Conferences/2022">22</a>'<a href="https://iclr.cc/Conferences/2023">23</a>, 
-    SISAP'<a href="https://sisap.org/2021/">21</a>'<a href="https://sisap.org/2022/">22</a>, 
-    IDA'<a href="https://ida2023.org/">23</a>'<a href="https://ida2024.org/">24</a>, 
-    LWDA'<a href="https://www.uni-marburg.de/de/fb02/professuren/bwl/digiprozess/lwda2023-2">23</a>, 
-    ICML'<a href="https://icml.cc/Conferences/2021">21</a>'<a href="https://icml.cc/Conferences/2023">23</a>'<a href="https://icml.cc/Conferences/2024">24</a>, 
-    AISTATS'<a href="https://www.aistats.org/aistats2020">20</a>'<a href="http://www.aistats.org/aistats2021/">21</a>'<a href="https://aistats.org/aistats2022/">22</a>, 
-    SDM'<a href="https://www.siam.org/conferences/cm/conference/sdm21">21</a>, 
-    ICDM'<a href="http://icdm2020.bigke.org/">20</a>, 
-    ECMLPKDD'<a href="https://ecmlpkdd2020.net/organisation/programcommittee/">20</a>'<a href="2021.ecmlpkdd.org">21</a>'<a href="2022.ecmlpkdd.org">22(Journal Track)</a>'<a href="2023.ecmlpkdd.org">23(Journal Track)</a>'<a href="2024.ecmlpkdd.org">24(Journal Track)</a>, 
-    NeurIPS Datasets and Benchmarks'<a href="https://neurips.cc/Conferences/2022/">22</a>'<a href="https://neurips.cc/Conferences/2023/">23</a>,
-    and 
-    NeurIPS'<a href="https://neurips.cc/Conferences/2020/">20</a>'<a href="https://neurips.cc/Conferences/2021/">21</a>'<a href="https://neurips.cc/Conferences/2022/">22</a>'<a href="https://neurips.cc/Conferences/2023/">23</a>.  
+    <ul>
+    <li>LOG'<a href="http://log2022.logconference.org/">22</a>'<a href="http://logconference.org/">23</a></li>
+    <li>ICLR'<a href="https://iclr.cc/2021">21</a>'<a href="https://iclr.cc/Conferences/2022">22</a>'<a href="https://iclr.cc/Conferences/2023">23</a></li>
+    <li>SISAP'<a href="https://sisap.org/2021/">21</a>'<a href="https://sisap.org/2022/">22</a></li>
+    <li>IDA'<a href="https://ida2023.org/">23</a>'<a href="https://ida2024.org/">24</a></li>
+    <li>LWDA'<a href="https://www.uni-marburg.de/de/fb02/professuren/bwl/digiprozess/lwda2023-2">23</a></li>
+    <li>ICML'<a href="https://icml.cc/Conferences/2021">21</a>'<a href="https://icml.cc/Conferences/2023">23</a>'<a href="https://icml.cc/Conferences/2024">24</a></li>
+    <li>AISTATS'<a href="https://www.aistats.org/aistats2020">20</a>'<a href="http://www.aistats.org/aistats2021/">21</a>'<a href="https://aistats.org/aistats2022/">22</a></li>
+    <li>SDM'<a href="https://www.siam.org/conferences/cm/conference/sdm21">21</a></li>
+    <li>ICDM'<a href="http://icdm2020.bigke.org/">20</a></li> 
+    <li>ECMLPKDD'<a href="https://ecmlpkdd2020.net/organisation/programcommittee/">20</a>'<a href="2021.ecmlpkdd.org">21</a>'<a href="2022.ecmlpkdd.org">22(Journal Track)</a>'<a href="2023.ecmlpkdd.org">23(Journal Track)</a>'<a href="2024.ecmlpkdd.org">24(Journal Track)</a></li> 
+    <li>NeurIPS Datasets and Benchmarks'<a href="https://neurips.cc/Conferences/2022/">22</a>'<a href="https://neurips.cc/Conferences/2023/">23</a></li>
+    <li>NeurIPS'<a href="https://neurips.cc/Conferences/2020/">20</a>'<a href="https://neurips.cc/Conferences/2021/">21</a>'<a href="https://neurips.cc/Conferences/2022/">22</a>'<a href="https://neurips.cc/Conferences/2023/">23</a></li> 
+    </ul>
   </li>
   <li>We have organized <a href="https://mlg-europe.github.io/2022/">MLG@ECMLPKDD 2022</a>, the 18th Workshop on Mining and Learning with Graphs.</li>
   <li>I was program chair of the KDML track at <a href="http://lwda2022.de">LWDA 2022</a>.</li>
