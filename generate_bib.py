@@ -23,10 +23,12 @@ def cf(s1, s2, format):
 
 def format_bibitem(item, format):
     '''the main workhorse'''
-    if 'doi' in item:
+    if nonempty('doi', item):
         link = f'https://dx.doi.org/{item["doi"]}'
-    elif 'url' in item:
+    elif nonempty('url', item):
         link = item['url']
+    elif nonempty('pdf', item):
+        link = item['pdf']
     else:
         link = ''
 
