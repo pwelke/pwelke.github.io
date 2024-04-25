@@ -54,6 +54,9 @@
 \newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
 
 
+\section{Under Review}
+\input{underreview.tex_part}
+
 \section{Current Preprints}
 \input{preprint.tex_part}
 
@@ -66,7 +69,5 @@
 \section{Nonarchival Peer Reviewed Venues}
 \input{nonarchival.tex_part}
 
-\section{Under Review}
-\input{underreview.tex_part}
 
 % \end{document}
