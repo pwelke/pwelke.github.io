@@ -36,7 +36,7 @@ I wrote my PhD thesis on 'Probabilistic Frequent Subtree Mining'.</p>
 <p>
 I have accounts on <a href="https://www.researchgate.net/profile/Pascal_Welke">ResearchGate</a> and <a href="https://www.linkedin.com/in/pascal-welke-0163b91b6/">LinkedIn</a>.
 My publications are indexed by <a href="https://dblp.uni-trier.de/pid/174/0119.html">dblp</a> and <a href="https://scholar.google.de/citations?user=hgwvC6gAAAAJ&amp;hl=en">google scholar</a>. 
-Some of the code that I write is on <a href="https://github.com/pwelke">github</a>.<br />
+Some of the code that I write is on <a href="https://github.com/pwelke">github</a> and I may shamelessly advertise my work and activities on <a href="https://twitter.com/PascalWelke">twitter</a>.<br />
 </p>
 
 <b>Office:</b> 
@@ -45,7 +45,8 @@ Some of the code that I write is on <a href="https://github.com/pwelke">github</
 
 <h2 id="news">News</h2>
 <ol>
-  <li>We will organize <a href="https://mlg-europe.github.io">MLG@ECMLPKDD 2024</a>, the 22th Workshop on Mining and Learning with Graphs. Join us for interesting discussions about graphs in Vilnius, Lithuania!</li>
+  <li>We are organizing the <i>Graph ML social at ICML'24</i> in beautiful Vienna.</li>
+  <li>We will organize <a href="https://mlg-europe.github.io"><b>MLG@ECMLPKDD 2024</b></a>, the 22th Workshop on Mining and Learning with Graphs. Join us for interesting discussions about graphs in Vilnius, Lithuania!</li>
   <li>I visited the <a href="https://www.mdsi.tum.de/mdsi/log2023/"><b>LOG</b> meetup in Munich</a>. 
   We presented our two accepted short papers <i>Maximally Expressive GNNs for Outerplanar Graphs</i> and <i>Extending Graph Neural Networks with Global Features</i>. The poster for the outerplanar GNN paper almost got the best poster award, being on second place.</li>
   <li>I am a <a href="https://neurips.cc/Conferences/2023/ProgramCommittee#top-reivewers">top reviewer</a> at NeurIPS. Awesomely, this comes with a free registration. Thank you NeurIPS!</li>
@@ -92,17 +93,20 @@ Some of the code that I write is on <a href="https://github.com/pwelke">github</
     <li>LWDA'<a href="https://www.uni-marburg.de/de/fb02/professuren/bwl/digiprozess/lwda2023-2">23</a></li>
     </ul>
   </li>
+  <li>I peer-review for workshops, e.g.,</li>
+    <ul>
+    <li>MI@ICML'<a href="https://icml2024mi.pages.dev/">24</a>, the Mechanistic Interpretability Workshop at ICML'24.</li>
+    <li>PDFL'<a href="https://pdfl.iais.fraunhofer.de/">20</a>'<a href="https://pdfl.iais.fraunhofer.de/">21</a>, the Workshop on Parallel, Distributed, and Federated Learning, collocated with ECMLPKDD'<a href="http://www.ecmlpkdd2020.net">20</a>'<a href="http://2021.ecmlpkdd.org">21</a>.</li>
+    <li>DMLE'<a href="https://dmle.iais.fraunhofer.de/">19</a>, the Second Workshop on Distributed Machine Learning at the Edge, collocated with ECMLPKDD'<a href="http://www.ecmlpkdd2019.org">19</a>.</li>
+    </ul>
   <li>We have organized <a href="https://mlg-europe.github.io/2023/">MLG@ECMLPKDD 2023</a>, the 20th Workshop on Mining and Learning with Graphs. Join us for interesting discussions about graphs in Torino, Italy!</li>
   <li>I was <a href="https://twitter.com/LogConference/status/1601245186306080770">awarded</a> as one of the 20 top <a href="https://log2022.logconference.org/">LOG'22</a> reviewers!</li>
   <li>We have organized <a href="https://mlg-europe.github.io/2022/">MLG@ECMLPKDD 2022</a>, the 18th Workshop on Mining and Learning with Graphs.</li>
   <li>I was program chair of the KDML track at <a href="http://lwda2022.de">LWDA 2022</a>.</li>
   <li>We have organized <a href="https://gem-ecmlpkdd.github.io/">GEM'21</a>, the third Workshop on Graph Embedding and Mining, collocated with <a href="http://2021.ecmlpkdd.org">ECMLPKDD'21</a>! It has been a pleasure! <a href="https://link.springer.com/book/10.1007/978-3-030-93736-2?sap-outbound-id=E835120BC32195E87FABD9DD18C1D03E5743D37A">Here are the proceedings</a>.</li>
-  <li>I was a member of the program committee of <a href="https://pdfl.iais.fraunhofer.de/">PDFL'21</a>, the Workshop on Parallel, Distributed, and Federated Learning, collocated with <a href="http://2021.ecmlpkdd.org">ECMLPKDD'21</a>.</li>
   <li>I have co-organized <a href="https://gem-ecmlpkdd.github.io/archive/2020">GEM'20</a>, the Workshop on Graph Embedding and Mining, collocated with <a href="http://www.ecmlpkdd2020.net">ECMLPKDD'20.</a></li>
   <li>I was program chair (with Nico Piatkowski) of the KDML track at <a href="https://www.lwda2020.org/">LWDA 2020</a>. It has been a pleasure. <a href="http://ceur-ws.org/Vol-2738/">Here are the proceedings.</a></li>
-  <li>I was member of the program committee of <a href="https://pdfl.iais.fraunhofer.de/">PDFL'20</a>, the Workshop on Parallel, Distributed, and Federated Learning, collocated with <a href="http://www.ecmlpkdd2020.net">ECMLPKDD'20</a>.</li>
   <li>Member of the program committee of <a href="https://gem-ecmlpkdd.github.io/">GEM'19</a>, the Workshop on Graph Embedding and Mining, collocated with <a href="http://www.ecmlpkdd2019.org">ECMLPKDD'19</a>.</li>
-  <li>Member of the program committee of <a href="https://dmle.iais.fraunhofer.de/">DMLE'19</a>, the Second Workshop on Distributed Machine Learning at the Edge, collocated with <a href="http://www.ecmlpkdd2019.org">ECMLPKDD'19</a>.</li>
   <li>Reviews for several journals, conferences, and academic funding programs, e.g. <a href="https://link.springer.com/journal/10994">Machine Learning</a>, <a href="https://www.springer.com/journal/10618">Data Mining and Knowledge Discovery</a>, <a href="https://link.springer.com/journal/10472">AMAI</a>, <a href="https://www.kdd.org/kdd2016/">ACM SIGKDD 2016</a>, <a href="https://www.ptj.de/projektfoerderung/kuenstliche-intelligenz-starter">KI-Starter NRW</a>.</li>
 </ol>
 
