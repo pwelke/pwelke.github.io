@@ -45,6 +45,7 @@ Some of the code that I write is on <a href="https://github.com/pwelke">github</
 
 <h2 id="news">News</h2>
 <ol>
+  <li>Are your random forests too large, as well? Try <i>Splitting Stump Forests</i> to compress them without losing accuracy! Visit our talk at <b>DS'2024</b> in Pisa, Italy.</li>z
   <li>Logical classifiers on graphs that look very similar to MPNNs? Yes! Check out our paper that got recently accepted to <b>KR'2024</b>. See you in Hanoi, Vietnam!</li>
   <li>We have organized the <i>Graph ML social at ICML'24</i> in beautiful Vienna. It was a great success with panel discussions, food, drinks, and over 200 participants.</li>
   <li>A while back, I gave an interview for "Die Presse" which was used in parts in a nice <a href="https://www.diepresse.com/17733100/die-schatten-der-wirklichkeit">introductory article to AI</a>.</li>
