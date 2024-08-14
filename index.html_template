@@ -39,15 +39,17 @@ My publications are indexed by <a href="https://dblp.uni-trier.de/pid/174/0119.h
 Some of the code that I write is on <a href="https://github.com/pwelke">github</a> and I may shamelessly advertise my work and activities on <a href="https://twitter.com/PascalWelke">twitter</a>.<br />
 </p>
 
-<b>Office:</b> 
+<b>Office:</b><br />
+<a href="https://ml-tuw.github.io" target="blank">Machine Learning Research Unit</a><br />
 2nd Floor, Erzherzog-Johann-Platz 1 (FB02), 1040 Vienna, Austria<br />
-<b>Email:</b> You can send mail to firstname.lastname@tuwien.ac.at<br />
+<b>Email:</b><br />
+You can send mail to firstname.lastname@tuwien.ac.at<br />
 
 <h2 id="news">News</h2>
 <ol>
-  <li>Are your random forests too large, as well? Try <i>Splitting Stump Forests</i> to compress them without losing accuracy! Visit our talk at <b>DS'2024</b> in Pisa, Italy.</li>z
+  <li>Are your random forests too large, as well? Try <i>Splitting Stump Forests</i> to compress them without losing accuracy! Visit our talk at <b>DS'2024</b> in Pisa, Italy.</li>
   <li>Logical classifiers on graphs that look very similar to MPNNs? Yes! Check out our paper that got recently accepted to <b>KR'2024</b>. See you in Hanoi, Vietnam!</li>
-  <li>We have organized the <i>Graph ML social at ICML'24</i> in beautiful Vienna. It was a great success with panel discussions, food, drinks, and over 200 participants.</li>
+  <li>We have organized the <i>Graph ML social</i> at <b>ICML'24</b> in beautiful Vienna. It was a great success with panel discussions, food, drinks, and over 200 participants.</li>
   <li>A while back, I gave an interview for "Die Presse" which was used in parts in a nice <a href="https://www.diepresse.com/17733100/die-schatten-der-wirklichkeit">introductory article to AI</a>.</li>
   <li>We will organize <a href="https://mlg-europe.github.io"><b>MLG@ECMLPKDD 2024</b></a>, the 22th Workshop on Mining and Learning with Graphs. Join us for interesting discussions about graphs in Vilnius, Lithuania!</li>
   <li>I visited the <a href="https://www.mdsi.tum.de/mdsi/log2023/"><b>LOG</b> meetup in Munich</a>. 
