@@ -49,6 +49,7 @@ You can send mail to firstname.lastname@tuwien.ac.at<br />
 
 <h2 id="news">News</h2>
 <ol>
+  <li><i>Splitting Stump Forests</i> received the <b>Best Student Paper Award</b> at the Discovery Science conference. A big shout out to Fouad Alkhoury, the first author!</li>
   <li>Our paper <i>Weisfeiler and Leman Go Loopy: A New Hierarchy for Graph Representational Learning</i> was accepted as an <b>oral presentation at NeurIPS'2024</b>. I'll bring my cactus socks to Vancouver!</li>
   <li><i>Is Expressivity Essential for the Predictive Performance of Graph Neural Networks?</i> We answer No! at the Workshop on Scientific Methods for Understanding Deep Learning <b>SciForDL@NeurIPS</b>.</li>
   <li>Are your random forests too large, as well? Try <i>Splitting Stump Forests</i> to compress them without losing accuracy! Let's meet at <b>DS'2024</b> in Pisa, Italy.</li>
