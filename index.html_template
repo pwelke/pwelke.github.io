@@ -38,7 +38,7 @@ I wrote my PhD thesis on 'Probabilistic Frequent Subtree Mining'.</p>
 <p>
 I have accounts on <a href="https://www.researchgate.net/profile/Pascal_Welke">ResearchGate</a> and <a href="https://www.linkedin.com/in/pascal-welke-0163b91b6/">LinkedIn</a>.
 My publications are indexed by <a href="https://dblp.uni-trier.de/pid/174/0119.html">dblp</a> and <a href="https://scholar.google.de/citations?user=hgwvC6gAAAAJ&amp;hl=en">google scholar</a>. 
-Some of the code that I write is on <a href="https://github.com/pwelke">github</a> and I may shamelessly advertise my work and activities on <a href="https://twitter.com/PascalWelke">twitter</a>.
+Some of the code that I write is on <a href="https://github.com/pwelke">github</a> and I may shamelessly advertise my work and activities on <a href="https://twitter.com/PascalWelke">twitter</a> and <a href="https://bsky.app/profile/pascalwelke.bsky.social">BlueSky</a>.
 </p>
 
 <b>Office:</b><br />
@@ -57,9 +57,9 @@ You can send mail to firstname.lastname@tuwien.ac.at<br />
   <li><i>Is Expressivity Essential for the Predictive Performance of Graph Neural Networks?</i> We answer No! at the Workshop on Scientific Methods for Understanding Deep Learning <b>SciForDL@NeurIPS</b>.</li>
   <li>Are your random forests too large, as well? Try <i>Splitting Stump Forests</i> to compress them without losing accuracy! Let's meet at <b>DS'2024</b> in Pisa, Italy.</li>
   <li>Logical classifiers on graphs that look very similar to MPNNs? Yes! Check out our paper that got recently accepted to <b>KR'2024</b> in Hanoi, Vietnam!</li>
+  <li>We have organized <a href="https://mlg-europe.github.io"><b>MLG@ECMLPKDD 2024</b></a>, the 22th Workshop on Mining and Learning with Graphs in Vilnius, Lithuania. It was awesome!</li>
   <li>We have organized the <i>Graph ML social</i> at <b>ICML'2024</b> in beautiful Vienna. It was a great success with panel discussions, food, drinks, and over 200 participants.</li>
   <li>A while back, I gave an interview for "Die Presse" which was used in parts in a nice <a href="https://www.diepresse.com/17733100/die-schatten-der-wirklichkeit">introductory article to AI</a>.</li>
-  <li>We will organize <a href="https://mlg-europe.github.io"><b>MLG@ECMLPKDD 2024</b></a>, the 22th Workshop on Mining and Learning with Graphs. Join us for interesting discussions about graphs in Vilnius, Lithuania!</li>
   <li>I visited the <a href="https://www.mdsi.tum.de/mdsi/log2023/"><b>LOG</b> meetup in Munich</a>. 
   We presented our two accepted short papers <i>Maximally Expressive GNNs for Outerplanar Graphs</i> and <i>Extending Graph Neural Networks with Global Features</i>. The poster for the outerplanar GNN paper almost got the best poster award, being on second place.</li>
   <li>I am a <a href="https://neurips.cc/Conferences/2023/ProgramCommittee#top-reivewers">top reviewer</a> at NeurIPS. Awesomely, this comes with a free registration. Thank you NeurIPS!</li>
@@ -67,7 +67,7 @@ You can send mail to firstname.lastname@tuwien.ac.at<br />
   <li>Happy that we can present two papers at the <b>GLFrontiers@NeurIPS</b> workshop: <i>Graph Pooling Provably Improves Expressivity</i> and <i>Maximally Expressive GNNs for Outerplanar Graphs</i>. See you in New Orleans, USA!</li>
   <li>I joined the <a href="https://ellis.eu/">ELLIS society</a> as a member.</li>
   <li>We won the <a href="publications/expectation_complete_poster_ICML.pdf">best poster</a> award at G-Research's ICML poster party in London where my coauthor Max Thiessen presented <i>Expectation-Complete Graph Representations with Homomorphisms</i>.</li>
-  <li>Our paper <i>Not All Models Are Explained Equal: How Explainable Machine Learning Suffers from the Rashomon Effect</i> got accepted at <b>ECMLPKDD</b>. See you in Torino, Italy!</li>
+  <li>Our paper <i>An Empirical Evaluation of the Rashomon Effect in Explainable Machine Learning</i> got accepted at <b>ECMLPKDD</b>. See you in Torino, Italy!</li>
   <li>I have joined <b>TU Wien</b>'s <a href="https://ml-tuw.github.io">Machine Learning Research Unit</a> in May 2023.</li>
   <li>Two accepted papers at <b>ACL'2023</b>! <i><a href="https://arxiv.org/abs/2207.03777">Hidden Schema Networks</a></i> and <i><a href="https://arxiv.org/abs/2209.01106">A New Aligned Simple German Corpus</a></i>. See you in Toronto, Canada!</li>
   <li>Our paper on <i>Expectation-Complete Graph Representations with Homomorphisms</i> has been accepted at <b>ICML'23</b>! See you in Honolulu, Hawaii!</li>
