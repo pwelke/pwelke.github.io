@@ -49,6 +49,8 @@ You can send mail to firstname.lastname@tuwien.ac.at<br />
 
 <h2 id="news">News</h2>
 <ol>
+  <li>In February, I will take on a new position as assistant professor at <a href="https://www.lancasterleipzig.de/">Lancaster University Leipzig</a>.
+  <li>We started the <b>GLOW</b> seminar series. <a href="https://sites.google.com/view/graph-learning-on-weds" target="blank">Graph Learning On Wednesdays</a> aims to create an inclusive and accessible environment that encourages interaction, especially for junior researchers and those outside major research labs. Once or twice a month, we discuss recent graph learning papers with the authors.</li>
   <li>I gave a keynote talk on <i>Expressive Graph Embeddings via Homomorphism Counting</i> at the <a href="https://sites.google.com/view/learning-on-graph-paris-meetup/home">LoG Meetup Paris</a>. Here are the <a href="presentations/2024-11-29_LoG_Paris.pdf">slides</a>.</li>
   <li>Our paper <i>Maximally Expressive GNNs for Outerplanar Graphs</i> will soon be published in the journal <b>Transactions on Machine Learning Research</b>.</li>
   <li>I was invited to give a talk at TU Wien's <a href="https://caiml.org/events/59/">CAIML Seminar</a>.</li>
