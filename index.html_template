@@ -14,7 +14,7 @@
 
 <img src="circle.jpg" width="150" height="150">
 
-<p>I am an Assistant Professor in Data Science at Lancaster University Leipzig. I received my PhD from the University of Bonn. After a PostDoc there I moved to TU Wien before joining LU Leipzig in early 2025. In my research, I investigate learning on and with graphs. In particular, I combine neural networks, graph mining, and graph theory to develop and analyze expressive graph representations, as well as efficient similarity based learning on graphs. I regularly publish and participate in top ML conferences such as NeurIPS, ICML, or AAAI and organize workshops and regular seminars for the graph learning community.
+<p>I am an Assistant Professor in Data Science at <a href="https://www.lancasterleipzig.de" target=_blank>Lancaster University Leipzig</a> and I am affiliated with the <a href="https://ml-tuw.github.io" target=_blank>Machine Learning research unit</a> at <a href="https://www.tuwien.ac.at" target="_blank">TU Wien</a>. I received my PhD from the University of Bonn. After a PostDoc there I moved to TU Wien before joining LU Leipzig in early 2025. In my research, I investigate learning on and with graphs. In particular, I combine neural networks, graph mining, and graph theory to develop and analyze expressive graph representations, as well as efficient similarity based learning on graphs. I regularly publish and participate in top ML conferences such as NeurIPS, ICML, or AAAI and organize workshops and regular seminars for the graph learning community.
 </p>
 
 <p>I also teach undergraduate and graduate courses in Computer Science and I supervise BA and MA theses on a regular basis.</p>
@@ -42,7 +42,8 @@ Some of the code that I write is on <a href="https://github.com/pwelke">github</
 </p>
 
 <b>Office:</b><br />
-<a href="https://www.lancasterleipzig.de/" target="blank">School of Computing and Communications</a><br />
+<a href="https://www.lancasterleipzig.de/" target="blank">Lancaster University Leipzig</a><br />
+School of Computing and Communications<br />
 Room 606, Strohsackpassage, Nikolaistraße 10, 04109 Leipzig, Germany<br />
 <b>Email:</b><br />
 You can send mail to p.lastname@lancaster.ac.uk<br />
