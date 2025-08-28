@@ -88,7 +88,10 @@ def format_bibitem(item, format):
     if nonempty('reviews', item):
         s += cf(f'[<a href="{item["reviews"]}">reviews</a>]\n', f'[\\href{{{item["reviews"]}}}{{reviews}}]\n', format)
     if nonempty('eprint', item):
-        s += cf(f'[<a href="https://arxiv.org/abs/{item["eprint"]}">arXiv</a>]\n', f'[\\href{{https://arxiv.org/abs/{item["eprint"]}}}{{arxiv}}]\n', format)
+        if item['eprinttype'] == 'arxiv':
+            s += cf(f'[<a href="https://arxiv.org/abs/{item["eprint"]}">arXiv</a>]\n', f'[\\href{{https://arxiv.org/abs/{item["eprint"]}}}{{arxiv}}]\n', format)
+        else:
+            s += cf(f'[<a href="{item["eprint"]}">{item["eprinttype"]}</a>]\n', f'[\\href{{{item["eprint"]}}}{{{item["eprinttype"]}}}]\n', format)
     if nonempty('biburl', item):
         s += cf(f'[<a href="{item["biburl"]}">bibtex</a>]\n', f'[\\href{{{item["biburl"]}}}{{bibtex}}]\n', format)
     if nonempty('venuetype', item):
