@@ -150,3 +150,50 @@ button + button, .button + .button, input[type=submit] + input[type=submit] {
         display: none;
     }
 }
+
+
+.psychedelic-flow {
+  z-index: -1;          /* 👈 pushes it behind all other content */
+  pointer-events: none; /* 👈 makes sure it never blocks clicks */
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(40% 60% at 20% 30%, hsl(300 90% 60% / .8), transparent 60%),
+    radial-gradient(50% 70% at 80% 40%, hsl(200 90% 60% / .8), transparent 65%),
+    radial-gradient(60% 80% at 40% 80%, hsl(120 90% 60% / .8), transparent 60%),
+    linear-gradient(120deg, hsl(0 90% 60%), hsl(60 90% 60%), hsl(180 90% 60%), hsl(300 90% 60%));
+  background-blend-mode: screen, screen, screen, normal;
+  background-size:
+    220% 220%,
+    220% 220%,
+    220% 220%,
+    400% 400%;
+  animation:
+    drift1 18s ease-in-out infinite alternate,
+    drift2 22s ease-in-out infinite alternate,
+    drift3 26s ease-in-out infinite alternate,
+    rainbow 30s linear infinite;
+  filter: saturate(1.25) blur(0.2px);
+}
+
+@keyframes drift1 {
+  0%   { background-position: 0% 30%,  50% 50%, 50% 60%, 0% 50%; }
+  100% { background-position: 80% 70%, 50% 50%, 50% 60%, 100% 50%; }
+}
+@keyframes drift2 {
+  0%   { background-position: 0% 30%,  50% 50%, 20% 80%, 0% 50%; }
+  100% { background-position: 0% 30%,  10% 10%, 80% 20%, 100% 50%; }
+}
+@keyframes drift3 {
+  0%   { background-position: 0% 30%,  50% 50%, 50% 60%, 0% 50%; }
+  100% { background-position: 0% 30%,  50% 50%, 60% 10%, 100% 50%; }
+}
+/* Slowly cycle the base linear rainbow */
+@keyframes rainbow {
+  0%   { filter: hue-rotate(0deg) saturate(1.25); }
+  100% { filter: hue-rotate(360deg) saturate(1.25); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .psychedelic-flow { animation: none; }
+}

@@ -29,7 +29,11 @@
   const font = params.get("personalization");
 
   if (font == 'sebastian') {
-    document.documentElement.style.fontFamily = '"Comic Sans MS", "Comic Sans", "Comic Neue", cursive' 
+    document.documentElement.style.fontFamily = '"Comic Sans MS", "Comic Sans", "Comic Neue", cursive';
+
+    const bg = document.createElement("div");
+    bg.className = "psychedelic-flow";
+    document.body.appendChild(bg);
   }
 </script>
 
