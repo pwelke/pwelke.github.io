@@ -29,7 +29,7 @@
   const font = params.get("personalization");
 
   if (font == 'sebastian') {
-    document.documentElement.style.fontFamily = '"Comic Sans MS", "Comic Sans", cursive' 
+    document.documentElement.style.fontFamily = '"Comic Sans MS", "Comic Sans", "Comic Neue", cursive' 
   }
 </script>
 
