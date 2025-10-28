@@ -1,6 +1,6 @@
 
 @article{bausejogl2025outerplanarnectar,
-publicationtype = {preprint},
+publicationtype = {nonarchival},
   pdf = {publications/bause2023outerplanarnectar.pdf},
   poster = {},
   slides = {},
@@ -48,6 +48,33 @@ publicationtype = {preprint},
   booktitle    = {International Conference on Machine Learning, Optimization, and Data Science (LOD)},
   year = {2025},  
   comment = {accepted for presentation}
+}
+
+
+@inproceedings{negishi2025wiltingtrees,
+  publicationtype = {publication},
+  pdf = {publications/negishi2025icml.pdf},
+  poster = {publications/negishi2025icmlposter.pdf},
+  slides = {},
+  video = {},
+  url = {https://proceedings.mlr.press/v267/negishi25a.html},
+  code = {https://github.com/masahiro-negishi/wilt},
+  reviews = {https://openreview.net/forum?id=lflqQWP1jy},
+  rating = {A*},
+  eprint = {2505.24642},
+  eprinttype = {arxiv},
+  venuetype = {conference},
+  venueurl = {https://icml.cc/2025},
+  author       = {Masahiro Negishi and
+                 Thomas Gärtner and
+                 Pascal Welke},
+  title        = {WILTing Trees: Interpreting the Distance Between MPNN Embeddings},
+  booktitle    = {International Conference on Machine Learning (ICML)},
+  year = {2025},  
+  pages =    {45852--45876},
+  volume =   {267},
+  series =   {Proceedings of Machine Learning Research},
+  abstract =   {We investigate the distance function learned by message passing neural networks (MPNNs) in specific tasks, aiming to capture the <em>functional</em> distance between prediction targets that MPNNs implicitly learn. This contrasts with previous work, which links MPNN distances on arbitrary tasks to <em>structural</em> distances on graphs that ignore task-specific information. To address this gap, we distill the distance between MPNN embeddings into an interpretable graph distance. Our method uses optimal transport on the Weisfeiler Leman Labeling Tree (WILT), where the edge weights reveal subgraphs that strongly influence the distance between embeddings. This approach generalizes two well-known graph kernels and can be computed in linear time. Through extensive experiments, we demonstrate that MPNNs define the relative position of embeddings by focusing on a small set of subgraphs that are known to be functionally important in the domain.}
 }
 
 
@@ -125,28 +152,6 @@ publicationtype = {publication},
   year = {2025},  
 }
 
-
-@inproceedings{negishi2025wiltingtrees,
-publicationtype = {preprint},
-  pdf = {publications/negishi2025icml.pdf},
-  poster = {publications/negishi2025icmlposter.pdf},
-  slides = {},
-  video = {},
-  code = {https://github.com/masahiro-negishi/wilt},
-  reviews = {https://openreview.net/forum?id=lflqQWP1jy},
-  rating = {A*},
-  eprint = {2505.24642},
-  eprinttype = {arxiv},
-  venuetype = {conference},
-  venueurl = {https://icml.cc/2025},
-  author       = {Masahiro Negishi and
-                 Thomas Gärtner and
-                 Pascal Welke},
-  title        = {WILTing Trees: Interpreting the Distance Between MPNN Embeddings},
-  booktitle    = {International Conference on Machine Learning (ICML)},
-  year = {2025},  
-  comment = {accepted as a poster presentation},
-}
 
 @inproceedings{negishi2024wiltingtreesnetsci,
 publicationtype = {nonarchival},
