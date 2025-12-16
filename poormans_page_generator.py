@@ -61,6 +61,6 @@ if __name__ == '__main__':
 	pubtypes = ['preprint', 'publication', 'lecturenote', 'nonarchival', 'book']
 
 	create_homepage(pubtypes)
-	create_latex(pubtypes, baseurl='https://pwelke.github.io/', template='reflist')
-	create_latex(pubtypes + ['underreview'], baseurl='https://pwelke.github.io/', template='reflistcv')
+	create_latex(pubtypes, baseurl='https://pwelke.de/', template='reflist')
+	create_latex(pubtypes + ['underreview'], baseurl='https://pwelke.de/', template='reflistcv')
 	compile_latex('reflist', pubtypes + ['underreview'])
