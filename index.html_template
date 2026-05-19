@@ -66,6 +66,7 @@ You can send mail to p.lastname@lancaster.ac.uk<br />
 
 <h2 id="news">News</h2>
 <ol>
+  <li>I have worked through an old graph theory paper that shows that <b>half of all tadpoles are graceful</b>. The paper was published in Chinese. I provide a translation, as well as code that implements the constructive proofs in linear time. Thank you Tamara for sending me down that rabbit hole :). (May 2026)</li>
   <li>I gave <a href="https://youtu.be/3LttLhxVIaY">public lecture on graph neural networks</a> at Lancaster Leipzig that is now available on youtube. (May 2026)</li>
   <li>We'll be organizing the <a href="https://mlg-europe.github.io/2026/" target=_blank>23rd International Workshop on Mining and Learning with Graphs</a> at this year's ECML/PKDD conference in Naples, Italy! Submit your papers! (September 2026)</li>
   <li>I will give a tutorial at this year's <a href="https://www.logml.ai/">LOGML summer school</a> at Imperical College, London. (July 2026)</li>
