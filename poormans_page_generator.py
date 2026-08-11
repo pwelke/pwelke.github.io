@@ -52,7 +52,10 @@ def compile_latex(template, pubtypes):
 		Path(f'{pubtype}.tex_part').unlink()
 
 	for extension in ['aux', 'fdb_latexmk', 'fls', 'log', 'out', 'xdv']:
-		Path(f'reflist.{extension}').unlink()
+		try:
+			Path(f'{template}.{extension}').unlink()
+		except FileNotFoundError:
+			pass # if the file is not there for some reason, we do not need to remove it.
 
 
 
