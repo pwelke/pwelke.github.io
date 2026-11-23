@@ -66,6 +66,8 @@ You can send mail to p.lastname@lancaster.ac.uk<br />
 
 <h2 id="news">News</h2>
 <ol>
+  <li>I'll give a talk on a fun graph generation project I've been working on at the Winter probabilistic / physics informed deep learning workshop in Würzburg. (December 2026)</li>
+  <li>I have again been recognized as one of the <a href="https://logconference.org/awards/">top reviewers</a> at the Learning on Graphs (LoG) Conference 2026. (November 2026)</li>
   <li>We will organize a special session on <i><a href="https://www.esann.org/special-sessions">New Frontiers in Graph Neural Networks: Emerging Architectures and Training Paradigms</a></i> at next year's <a href="https://esann.org">ESANN conference</a>. Consider sending your papers on weird ways to train GNNs!</li>
   <li>The <a href="https://graphlearning-leipzig.github.io/2026/" target="blank">LoG meetup Leipzig</a> brought together researchers mainly from the Leipzig region. It was a lot of fun. Thanks to all participants and to my co-organizers Lucia Testa and Martin Ritzert. (November 2026)</li>
   <li>I have worked through an old graph theory paper that shows that <b>half of all tadpoles are graceful</b>. The paper was published in Chinese. I provide a translation, as well as code that implements the constructive proofs in linear time. Thank you Tamara for sending me down that rabbit hole :). (May 2026)</li>
@@ -73,14 +75,14 @@ You can send mail to p.lastname@lancaster.ac.uk<br />
   <li>I gave <a href="https://youtu.be/3LttLhxVIaY">public lecture on graph neural networks</a> at Lancaster Leipzig that is now available on youtube. (May 2026)</li>
   <li>We have organized the <a href="https://mlg-europe.github.io/2026/" target=_blank>23rd International Workshop on Mining and Learning with Graphs</a> at this year's ECML/PKDD conference in Naples, Italy! (September 2026)</li>
   <li>I have given a talk on Backpropagation-Free Graph Neural Networks at the Logic and Discrete Mathematics Seminar of Tampere University. (April 2026)</li>
-  <li>I have been recognized as one of the <a href="https://logconference.org/awards/">top reviewers</a> at the Learning on Graphs (LoG) Conference 2025. (December 2025)</li>
+  <li>I have been recognized as one of the <a href="https://log2025.logconference.org/awards/">top reviewers</a> at the Learning on Graphs (LoG) Conference 2025. (December 2025)</li>
   <li>The organizers of the GLOW reading group wrote a blog post summarizing an intriguing discussion: <a href="https://glowreadinggroup.substack.com/p/community-takes-on-the-future-of">Community Takes on the Future of Graph Learning</a>. (July 2025)</li>
-  <li><i>Expressive Pooling for Graph Neural Networks</i>, which started as a small idea at the MLG workshop 2023 in Torino, was now published in TMLR. (July 2025)</li>
 </ol>
 
 <details>
   <summary>Old News</summary>
 <ol>
+  <li><i>Expressive Pooling for Graph Neural Networks</i>, which started as a small idea at the MLG workshop 2023 in Torino, was now published in TMLR. (July 2025)</li>
   <li>I was invited to give a talk at the Department of Mathematics of TU Chemnitz. (June 2025)</li>
   <li>We have organized the <a href="https://mlg-europe.github.io/2025/" target=_blank>22nd International Workshop on Mining and Learning with Graphs</a> at this year's ECML/PKDD conference in Porto, Portugal! Submit your papers! (June 2025)</li>
   <li>I gave a talk in the <a href="https://www.niser.ac.in/~smishra/event/cskathabarta/archive/2025.html">CS Katha Bartha</a> lecture series at <a href="https://www.niser.ac.in"> NISER</a>, India. (May 2025)</li>
